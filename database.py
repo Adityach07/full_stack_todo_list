@@ -8,10 +8,6 @@ SQLALCHEMY_DATABASE_URL = "postgresql://kukeqqcd:s3anFmwOyaKvIvVdfEo2wf6MQyBTJmT
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
-# MYSQL Series
-# engine = create_engine(
-#     SQLALCHEMY_DATABASE_URL
-# )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
